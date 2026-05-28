@@ -51,5 +51,6 @@ def build_heatmap_from_gnn(model, cities):
 
     edge_input = torch.cat([hi, hj, dij], dim=-1)
     heatmap = model.edge_mlp(edge_input).squeeze(-1)
+    
     heatmap.fill_diagonal_(0.0)
     return heatmap

@@ -1,4 +1,4 @@
-N = 20
+N = 100
 HIDDEN_DIM = 64
 BATCH_SIZE = 2
 LR = 5e-3
